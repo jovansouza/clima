@@ -9,6 +9,7 @@ function screen(dados){
     document.querySelector('.weather').innerHTML = dados.weather[0].description
     document.querySelector('.umidade').innerHTML ='Umidade: ' + dados.main.humidity + '%'
     document.querySelector('.icon').src = `https://openweathermap.org/img/wn/${dados.weather[0].icon}.png`
+    
     console.log(dados)
 }
 
